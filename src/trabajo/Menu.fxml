@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabajo.MenuController">
+    <children>
+        <ImageView fitHeight="523.0" fitWidth="509.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../iconos/1275783_700.jpg" />
+            </image>
+        </ImageView>
+
+        <Button fx:id="btnAtomo" layoutX="51.0" layoutY="85.0" mnemonicParsing="false" onAction="#MostrarVentanaCiencias">
+            <graphic>
+                <ImageView fx:id="imagenview1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../iconos/atomo%20.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button fx:id="Botton2" layoutX="51.0" layoutY="317.0" mnemonicParsing="false" onAction="#MostrarVentanaMatematicas">
+            <graphic>
+                <ImageView fx:id="imagenview2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../iconos/libro.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Botton3" layoutX="311.0" layoutY="85.0" mnemonicParsing="false" onAction="#MostrarVentanaSociales">
+            <graphic>
+                <ImageView fx:id="imagenview3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../iconos/globo-terraqueo.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="Botton4" layoutX="311.0" layoutY="317.0" mnemonicParsing="false" onAction="#MostrarVentanaIngles">
+            <graphic>
+                <ImageView fx:id="imagenview4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../iconos/libros.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Text fx:id="Nombre" layoutX="531.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Jugador : ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Label fx:id="importnombre" alignment="CENTER" contentDisplay="CENTER" layoutX="528.0" layoutY="95.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="148.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Text fx:id="Nombre1" layoutX="530.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntage Ciencias :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Label fx:id="puntajeCiencia" alignment="CENTER" contentDisplay="CENTER" layoutX="528.0" layoutY="195.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="148.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Text fx:id="Nombre2" layoutX="532.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntage Sociales :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="Nombre3" layoutX="511.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntage Matematicas :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="Nombre4" layoutX="539.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puntage Ingles :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Label fx:id="PuntosCiencias" alignment="CENTER" contentDisplay="CENTER" layoutX="531.0" layoutY="188.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="148.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="PuntosSociales" alignment="CENTER" contentDisplay="CENTER" layoutX="531.0" layoutY="257.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="148.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="puntosmatematicas" alignment="CENTER" contentDisplay="CENTER" layoutX="529.0" layoutY="332.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="148.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="puntosingles" alignment="CENTER" contentDisplay="CENTER" layoutX="529.0" layoutY="396.0" minHeight="16" minWidth="69" prefHeight="20.0" prefWidth="148.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

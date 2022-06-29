@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabajo.JuegoController">
+   <children>
+      <ImageView fx:id="casa" fitHeight="482.0" fitWidth="846.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../iconos/fondo-azul-oscuro-textura-grunge_145345-30.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="piedra1" layoutX="35.0" layoutY="284.0" mnemonicParsing="false" onAction="#opc1">
+         <graphic>
+            <ImageView fx:id="imagenpiedra" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconos/piedra_1.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="papel1" alignment="BOTTOM_CENTER" layoutX="332.0" layoutY="284.0" mnemonicParsing="false" onAction="#opc2">
+         <graphic>
+            <ImageView fx:id="imagenpapel" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconos/papel_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="tijera1" layoutX="628.0" layoutY="287.0" mnemonicParsing="false" onAction="#opc3">
+         <graphic>
+            <ImageView fx:id="imagentijera" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconos/tijera_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Maquina" layoutX="628.0" layoutY="89.0" mnemonicParsing="false" text="Maquina" />
+      <Button fx:id="Jugador" layoutX="35.0" layoutY="89.0" mnemonicParsing="false" text="Jugador" />
+      <Button fx:id="Menu" layoutX="398.0" layoutY="219.0" mnemonicParsing="false" onAction="#Regresar">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/casa-web.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>
